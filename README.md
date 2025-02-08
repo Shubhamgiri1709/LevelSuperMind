@@ -18,8 +18,7 @@ UiAutomator2 driver
 Your Android device should connected to system
 Any IDE (VS Code, Eclipse, etc.)
 Installation
-Clone the repository:
-  git clone https://github.com/abhishek-kolapkar/Level-Supermind-Automation.git
+
 
   cd android
 Install the required dependencies:
