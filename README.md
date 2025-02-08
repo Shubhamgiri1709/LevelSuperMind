@@ -67,13 +67,10 @@ Capability settings stored in properties files for easy configuration changes wi
 2. Test Design:
 Used POM for structuring page-specific locators and methods, ensuring modular and reusable code.
 Divided test cases into separate test classes for different login methods, making the framework scalable for future enhancements.
-3. Reporting:
-Integrated Extent Reports for comprehensive HTML-based reports, providing detailed insights into test execution status.
-TestNG listeners capture test events and link screenshots of failures for enhanced traceability.
-4. Utility Layer:
+3. Utility Layer:
 Encapsulated reusable methods for screenshot capturing, OTP handling, and UI interactions.
 Notifications utility handles runtime OTP extraction, ensuring smooth test execution for login flows requiring OTP.
-5. Handling positive/negative cases for email/phone inputs
+4. Handling positive/negative cases for email/phone inputs
 Created validateInput() method in [pages.LoginPage] to handle valid/invalid inputs & log appropriate error messages
 Handle mobile number format validation only for India
 Positive Test : 
