@@ -47,7 +47,7 @@ Folder Structure
 Running Tests
 To run the tests, use the following maven commands:
 
-  Open - src/test/resources/Properties/Properties.properties
+  Open - src/test/resources/Properties/global.properties
 
   update with your connected device : 
   - platformVersion 
