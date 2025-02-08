@@ -101,14 +101,13 @@ Negative Tests :
 TestNG XML files facilitate executing specific test suites (email/phone login).
 7. Modular and Scalable Design:
 Clear separation of concerns with dedicated folders for base setup, pages, utilities, and tests.
+
 Challenges
 - Learn Appium in less time & use it practically 
 
 - Appium flaky nature
 
 - Handling toast alert
-
-- Country selection (Not implemented)
 
 - Dynamic OTP handling
 
