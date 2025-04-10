@@ -1,4 +1,4 @@
-Level Supermind Automation : Android
+# Level Supermind Automation : Android
 Appium-Selenium-TestNG Framework with POM structure
 Table of Contents
 Prerequisites
@@ -7,7 +7,7 @@ Folder Structure
 Running Tests
 Approach Taken
 Challenges
-Prerequisites
+## Prerequisites
 Before you begin, ensure you have met the following requirements:
 
 Java 8+
@@ -23,7 +23,8 @@ Installation
   cd android
 Install the required dependencies:
   [cmd] mvn clean
-Folder Structure
+## Folder Structure
+~~~
   LevelSuper/
   |
   |   ├── src/
@@ -43,8 +44,8 @@ Folder Structure
                           ├── LoginTest
       ├── pom.xml (added all required dependencies & plugins)
       ├── README.md
-   
-Running Tests
+  ~~~ 
+## Running Tests
 To run the tests, use the following maven commands:
 
   Open - src/test/resources/Properties/global.properties
@@ -60,17 +61,17 @@ To run the tests, use the following maven commands:
 2. To verify - Login functionality with Phone
 
   [cmd] mvn test -P login-with-phone
-Approach Taken
-1. Driver Initialization:
+## Approach Taken
+## 1. Driver Initialization:
 Centralized AndroidDriver initialization in the base package with customizable capabilities.
 Capability settings stored in properties files for easy configuration changes without modifying code.
-2. Test Design:
+## 2. Test Design:
 Used POM for structuring page-specific locators and methods, ensuring modular and reusable code.
 Divided test cases into separate test classes for different login methods, making the framework scalable for future enhancements.
-3. Utility Layer:
+## 3. Utility Layer:
 Encapsulated reusable methods for screenshot capturing, OTP handling, and UI interactions.
 Notifications utility handles runtime OTP extraction, ensuring smooth test execution for login flows requiring OTP.
-4. Handling positive/negative cases for email/phone inputs
+## 4. Handling positive/negative cases for email/phone inputs
 Created validateInput() method in [pages.LoginPage] to handle valid/invalid inputs & log appropriate error messages
 Handle mobile number format validation only for India
 Positive Test : 
@@ -94,12 +95,12 @@ Negative Tests :
 
   Phone: (+91) 1236547890
          (+91) 5632147089
-6. Test Execution:
+## 6. Test Execution:
 TestNG XML files facilitate executing specific test suites (email/phone login).
 7. Modular and Scalable Design:
 Clear separation of concerns with dedicated folders for base setup, pages, utilities, and tests.
 
-Challenges
+## Challenges
 - Learn Appium in less time & use it practically 
 
 - Appium flaky nature
